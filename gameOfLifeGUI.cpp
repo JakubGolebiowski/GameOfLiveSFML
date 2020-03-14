@@ -43,7 +43,7 @@ void GameOfLifeGUI::SetSizeOfKomorka(unsigned int _x, unsigned int _y)
 
 void GameOfLifeGUI::Start(unsigned int _liczba, unsigned int _sleepTime)
 {
-    sf::RenderWindow window(sf::VideoMode(this->width*this->GetPlansza().GetY(), this->height*this->GetPlansza().GetX()), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(this->width*this->GetPlansza().GetY(), this->height*this->GetPlansza().GetX()), "GameOfLifeSFML");
 
     /*sf::RectangleShape ***/ rectangles = new sf::RectangleShape*[this->GetPlansza().GetY()];
     for(unsigned int i=0;i<this->GetPlansza().GetY();i++){
